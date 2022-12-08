@@ -8,7 +8,7 @@ from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 
-"""-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
+"""----------------------------------------------------------------------------"""
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 UᎮDΛTΞS 📢', url='https://t.me/sources_cods')
+            InlineKeyboardButton('⚡Updates⚡', url='https://t.me/MovieClubUpdates')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -54,9 +54,9 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
-                video="https://telegra.ph/file/5104288cec4e13769a882.mp4",                                               
-                                                 caption=f'<b>ʜᴇʏ, {u.mention} 👋🏻\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ {message.chat.title}\n\nʏᴏᴜ ᴄᴀɴ ꜰɪɴᴅ ᴍᴏᴠɪᴇꜱ / ꜱᴇʀɪᴇꜱ / ᴀɴɪᴍᴇꜱ ᴇᴛᴄ. ꜰʀᴏᴍ ʜᴇʀᴇ. ᴇɴᴊᴏʏ😉.\n\n<b>┏≫ ғᴏʟʟᴏᴡ ɢʀᴏᴜᴘ ʀᴜʟᴇs</b>\n┣ <b>ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ›› @Technical_Help_Support_Bot</b></code>\n<b>┗≫ ғᴏʟʟᴏᴡ ɢʀᴏᴜᴘ ʀᴜʟᴇs</b>',
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('➡️ɢʀᴏᴜᴘ ʀᴜʟᴇs⬅️', url='https://www.youtube.com/@Anuragtechnical') ] ] )
+               video="https://telegra.ph/file/03691465baa774e46506d.mp4",                                               
+                                                 caption=f'<b>හායි , {u.mention} 👋🏻\nMovieClub Family සමුහයට සාදරයෙන් පිළිගන්නවා.🙏 {message.chat.title}\n\nඔයාට අපෙ Group එකෙන් ෆිල්ම් / ටීවි සීරිස් / සිංහල උපසිරැසි යන සියළු දේ ලබාගන්න පුළුවන්.❤️\n(Servers සඳහා දැරීමට සිදුවන පිරිවැය හේතුවෙන් විනාඩියක පමණ Ad එකක් නරඹීමට සිදුවන බව කරුණාවෙන් සලකන්න.🥲🙏)\n\n<b>┏≫ Follow Group Rules</b>\n┣ <b>Update Channel ›› @MovieClubUpdates</b></code>\n<b>┗≫ Follow Group Rules</b>',
+                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚡How To Download⚡', url='https://t.me/ClickAdd_MCF') ] ] )
                 )
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
